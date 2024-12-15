@@ -7,6 +7,7 @@ import { CustomerModule } from './customer/customer.module';
 import { ProductsModule } from './products/products.module';
 import { ManageCustomerModule } from './manage-customer/manage-customer.module';
 import { CartModule } from './cart/cart.module';
+import { ReviewModule } from './review/review.module';
 
 @Module({
   imports: [
@@ -25,6 +26,7 @@ import { CartModule } from './cart/cart.module';
     ProductsModule,
     ManageCustomerModule,
     CartModule,
+    ReviewModule,
   ],
   controllers: [AppController],
   providers: [AppService],
