@@ -132,8 +132,8 @@ Import the provided Postman collection to test all features seamlessly.
 For queries, feature requests, or collaborations, reach out:
 
 - **Name**: Samio
-- **Email**: your-email@example.com
-- **GitHub**: [Your GitHub Profile](https://github.com/your-profile)
+- **Email**: samiohasan6@gmail.com
+- **GitHub**: [Your GitHub Profile](https://github.com/samio11)
 
 ---
 
