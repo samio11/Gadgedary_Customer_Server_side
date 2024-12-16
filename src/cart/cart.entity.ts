@@ -16,4 +16,11 @@ export class Cart {
 
   @Column()
   quantity: number; // Quantity in cart
+
+  @Column({
+    type: 'enum',
+    enum: ['Pending', 'Payed'],
+    default: 'Pending', // Default payment status
+  })
+  payment_status: 'Pending' | 'Payed'; // Payment Status
 }
