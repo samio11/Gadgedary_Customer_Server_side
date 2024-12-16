@@ -1,99 +1,159 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
-</p>
+# 🛒 **Customer Management System**
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+A robust **Customer Management System** built with **NestJS** and **TypeScript** that delivers advanced e-commerce functionalities like account management, product browsing, reviews, shopping cart, and order processing.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## 🚀 **Features**
 
-## Description
+### **1. Account Management**
+- Create, view, edit, and delete customer account information.
+- Secure login with **multi-factor authentication**.
+- Social media integration for **login** and product sharing.
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+### **2. Product Management**
+- Browse products with advanced features:
+  - Search by name.
+  - Filter by price, category, or availability.
+  - Sort products in ascending/descending order.
 
+### **3. Shopping Cart**
+- Add or remove products.
+- Update product quantities.
 
-## Project API
+### **4. Wishlist**
+- Save favorite products for future reference.
 
-![Postman Login and Register](image.png)
-![Postman_latestest_api](https://github.com/user-attachments/assets/91478f07-c15f-4b2a-a766-b58742d399eb)
+### **5. Order Management**
+- Place orders with **multiple payment options**.
+- Track orders in real-time.
+- Access and **download invoices** for completed purchases.
+- Manage returns and refunds with valid reasons.
 
-# Customer Management System
+### **6. Product Reviews**
+- Add, edit, and view product ratings and reviews.
 
-Welcome to the **Customer Management System** repository! This project is designed to provide a comprehensive solution for managing customer accounts, products, orders, and more. Below you will find details about the project structure, customer features, and how to get started.
+### **7. Notifications**
+- Receive timely notifications for:
+  - Special offers and promotions.
+  - Order updates.
+  - Personalized recommendations.
 
-## 📂 Project Structure
+### **8. Customer Support**
+- Raise queries or issues via a **ticketing system**.
+- Live chat with customer support.
 
-```plaintext
-src/
-└── customer/
-    ├── customer.controller.ts
-    ├── customer.module.ts
-    ├── customer.service.ts
-    ├── customer.entity.ts
-    └── dto/
-        ├── register.dto.ts
-        └── login.dto.ts
+### **9. Feedback & Recommendations**
+- Submit platform and service feedback.
+- Receive personalized product recommendations based on user behavior.
 
+---
 
-Customer Features
-Account Management:
+## 🛠️ **Tech Stack**
 
-Create, view, edit, and delete account information.
-Browse Products:
+- **Framework**: NestJS (Node.js)
+- **Language**: TypeScript
+- **Database**: PostgreSQL (via TypeORM)
+- **Authentication**: JWT (Passport)
+- **Tools**: ESLint, Prettier, Jest
 
-Search, filter, and sort products to find the best options.
-Product Reviews:
+---
 
-Add, edit, and view product reviews/ratings to help make informed decisions.
-Shopping Cart:
+## 📦 **Project Setup**
 
-Add/remove products and update quantities in the cart.
-Wishlist:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-repo-link.git
+   cd your-project-folder
+   ```
 
-Save products for future reference or to purchase later.
-Order Placement:
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-Place orders with multiple payment options.
-Order Tracking:
+3. **Environment setup**:
+   Create a `.env` file with the required configurations:
+   ```
+   DATABASE_URL=your_database_url
+   JWT_SECRET=your_jwt_secret
+   ```
 
-Track the order status in real-time, from processing to delivery.
-Return/Refund Management:
+4. **Run the app**:
+   - Development mode:
+     ```bash
+     npm run start:dev
+     ```
+   - Production mode:
+     ```bash
+     npm run build
+     npm run start:prod
+     ```
 
-Request returns or refunds with appropriate reasons.
-Notifications:
+5. **Run tests**:
+   ```bash
+   npm run test
+   ```
 
-Receive timely notifications about offers, order updates, and product recommendations.
-Customer Support:
+---
 
-Chat with support or raise queries via a ticketing system for assistance.
-Download Invoices:
+## 📄 **API Endpoints**
+Here are key endpoints for testing the features using **Postman**:
 
-Access invoices for completed purchases.
-Authentication:
+| **Method** | **Endpoint**                        | **Description**                       |
+|------------|-------------------------------------|---------------------------------------|
+| `POST`     | `/login`                            | Login a customer                      |
+| `POST`     | `/register`                         | Register a new customer               |
+| `GET`      | `/products`                         | View all products                     |
+| `POST`     | `/cart`                             | Add a product to the shopping cart    |
+| `GET`      | `/orders`                           | View order history                    |
+| `POST`     | `/payment/{id}`                     | Process payment                       |
 
-Multi-factor authentication for secure login.
-Social Media Integration:
+---
 
-Login or share products through social media accounts.
-Feedback:
+## 🧩 **Scripts**
 
-Submit feedback about the platform or services to help improve the system.
-Recommendations:
+| **Command**       | **Description**                               |
+|-------------------|-----------------------------------------------|
+| `npm run start`   | Start the application in production mode      |
+| `npm run start:dev` | Run the application in development mode     |
+| `npm run lint`    | Run ESLint to format and lint the code        |
+| `npm run test`    | Run the test suite                            |
 
-Personalized product recommendations based on customer activity and preferences.
-```
+---
+
+## 🔗 **Postman Collection**
+Import the provided Postman collection to test all features seamlessly.
+
+> **Screenshots & Endpoints Demo**
+![Postman Screenshot](./assets/postman-demo.png)
+
+---
+
+## 📧 **Contact**
+For queries, feature requests, or collaborations, reach out:
+
+- **Name**: Samio
+- **Email**: your-email@example.com
+- **GitHub**: [Your GitHub Profile](https://github.com/your-profile)
+
+---
+
+## 🎯 **Contributing**
+Contributions are welcome! Fork this project, make your changes, and submit a pull request.
+
+1. Fork the repository.
+2. Create a new branch:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add your feature"
+   ```
+4. Push your branch:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+---
+
+**Enjoy building with NestJS! 🛠️**
